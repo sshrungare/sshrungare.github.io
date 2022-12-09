@@ -1,0 +1,329 @@
+<div>
+    <div dir="ltr" class="reader-article-content reader-article-content--content-blocks reader-article-content--longform-theme">
+              <p class="reader-text-block__paragraph">
+      <strong>Preface -</strong>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      As Per a NITI Ayog <a href="https://www.niti.gov.in/sites/default/files/2021-03/InvestmentOpportunities_HealthcareSector_0.pdf">Report</a>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      “<em>India currently has 1.3 hospital beds per 1,000 population. There is also a shortage of skilled health workers, with 0.65 physicians per 1,000 people (the World Health Organisation standard is 1 per 1,000 people) and 1.3 nurses per 1,000 people) .An additional 3 Million beds will be needed for India to achieve the target of 3 beds per 1,000 people by 2025</em>”
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      As part of Govt. of India’s Ayushman Bharat digital mission(<a href="https://abdm.gov.in">https://abdm.gov.in</a>), National Health Authority (NHA) has announced UHI (Unified&nbsp;Health Interface).
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      Quote from the press release - <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1812398">https://pib.gov.in/PressReleasePage.aspx?PRID=1812398</a>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <em>“UHI is an open network designed to enable interoperable digital health service delivery. UHI will be powered by protocols built by an open community of developers and deployed on a Gateway built by NHA. Further, in the press release, adoption of the Decentralized Health Protocol (DHP) as the core protocol of UHI was announced, and developers were invited to join DHP and contribute to UHI. Meanwhile, NHA’s internal team has also been working on the same.</em>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <em>&nbsp;Any technology provider currently developing digital health solutions for Hospitals, doctors, labs, or consumers can create innovative new solutions using DHP and become a part of the UHI Network.”&nbsp;</em>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      With the above discussion in mind, it will be clearly helpful to predict “How Many days a patient may stay in the hospital for treatment?”
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      The length of stay (LOS)—the number of days between patient admission and discharge —is essential to a healthcare facility. LOS varies significantly because of more variable parameters such as illness conditions and specializations available at hospitals etc. This makes manually planning patients' lengths of stay in the hospital challenging.
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      This process can be automated to make all resources at the hospital are used efficiently.&nbsp;
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <strong>System Architecture –&nbsp;</strong>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ <!---->
+      <div class="reader-image-block reader-image-block--full-width">
+    <figure class="reader-image-block__figure">
+        <div class="ivm-image-view-model   ">
+      <div class="ivm-view-attr__img-wrapper ivm-view-attr__img-wrapper--use-img-tag display-flex
+      
+      ">
+       <img src="https://media-exp1.licdn.com/dms/image/D4D12AQGF596Le4I2-w/article-inline_image-shrink_1500_2232/0/1668753693495?e=1675900800&amp;v=beta&amp;t=Us8Qzb-uxAWS--q3gDBdKtkNCVrm7rktbHufFcAykyA" loading="lazy" alt="No alt text provided for this image" id="ember736" class="ivm-view-attr__img--centered reader-image-block__img lazy-image ember-view">
+  </div>
+    </div>
+  
+          <figcaption class="display-block mt2 full-width text-body-small-open t-sans text-align-center t-black--light">
+           Proposed System for LOS prediction.<!---->
+          </figcaption>
+    </figure>
+  </div>
+  
+ 
+       <p class="reader-text-block__paragraph">
+      When patients are admitted, ML models are used to predict their length of stay. This approach can be used by hospital administrators to optimize resource consumption and capacity planning. They can determine which facilities are overwhelmed and which resources within those facilities should be increased. It can also be used to determine whether there are sufficient staff resources to handle a patient's release.
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <strong>Stage 1&nbsp;- </strong>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      Data for EHR / EMR (Electronic Health Records / Electronic Medical Records) is derived from sources such as databases, flat files, and FIHR. Other data attributes, such as available/total hospital resources, can also be extracted or input into the system via the web portal or care manager portal.
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <strong>Stage 2 -</strong>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      To ingest data from various sources to the data lake, we can utilize SparkSQL, PySpark, and SPARK Streaming. Data purification activities can be performed here to feed data to the ML model.
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <strong>Stage 3 - </strong>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      Data that has been cleaned can be fed into a pre-trained ML model. For prediction, it can be manually triggered, scheduled, or event-based.
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <strong>Stage 4 -</strong>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      Predicted data, together with other patient data, can be displayed on a dashboard or RTMS such as Apache Superset. This information can then be used by the care manager to make the best use of available resources while also preparing for future hospitalizations.
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ <!---->
+ 
+ 
+      <hr class="reader-divider-block">
+        <p class="reader-text-block__paragraph">
+     
+        <br>
+    </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+     
+        <br>
+    </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <em>Predicting the length of stay is advantageous to patients, their families, and insurance companies. A hospital discharge date helps patients and their families identify and predict medical expenditures.</em>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      References-
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <a href="https://towardsdatascience.com/predicting-hospital-length-of-stay-at-time-of-admission-55dfdfe69598">https://towardsdatascience.com/predicting-hospital-length-of-stay-at-time-of-admission-55dfdfe69598</a>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <a href="https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-020-1475-6">https://bmcgeriatr.biomedcentral.com/articles/10.1186/s12877-020-1475-6</a>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+       <p class="reader-text-block__paragraph">
+      <a href="https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-021-01722-4">https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-021-01722-4</a>
+   </p>
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+ 
+    </div>
+  
+ 
+   
+  </div>
